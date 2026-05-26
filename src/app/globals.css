@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --color-midnight: #0A0A0B;
+  --color-cream: #FDFBF7;
+  --color-gold: #D4AF37;
+  --color-gold-light: #F1E5AC;
+  --color-accent: #FFD700;
+  --color-clay: #161618;
+
+  --font-serif: var(--font-playfair), serif;
+  --font-sans: var(--font-inter), sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: #FDFBF7;
+    --foreground: #0A0A0B;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-inter), sans-serif;
+    -webkit-font-smoothing: antialiased;
+    transition: all 0.5s ease;
+  }
+
+  /* Core section themes */
+  .dark-section {
+    background-color: #0A0A0B !important;
+    color: #ffffff !important;
+    padding-top: 6rem;
+    padding-left: 0rem;
+  }
+  
+  
+  .dark-section p, .dark-section span:not(.text-gold):not(.text-accent) {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .light-section {
+    background-color: #FDFBF7 !important;
+    color: #0A0A0B !important;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .light-section p, .light-section span:not(.text-gold):not(.text-accent) {
+    color: rgba(10, 10, 11, 0.6);
+  }
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+/* Glassmorphism */
+.glass-dark {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-light {
+  background: rgba(10, 10, 11, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(10, 10, 11, 0.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FDFBF7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFD700;
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "customer": {
+      "firstName": "Hassan",
+      "lastName": "Habib",
+      "phone": "03289911654",
+      "email": "khansanullah735@gmail.com",
+      "address": "Gull bahir khurd"
+    },
+    "items": [
+      {
+        "id": "pd2",
+        "name": "Deal 2: Medium Pizza + 2 Drinks",
+        "price": 1850,
+        "category": "Pizza Deals",
+        "description": "Any Medium Pizza + 2 Regular Drinks",
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 1850,
+    "id": "AM-230026",
+    "status": "delivered",
+    "createdAt": "2026-05-25T11:16:20.299Z",
+    "rider": {
+      "name": "Amigos Rider",
+      "progress": 100
+    },
+    "updatedAt": "2026-05-25T11:33:32.725Z"
+  }
+]
